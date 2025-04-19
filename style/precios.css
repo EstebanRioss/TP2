@@ -1,0 +1,17 @@
+body{
+  padding-top: 70px
+}
+.pricing-page h1 {
+  font-weight: 700;
+}
+.btn-group .btn {
+  min-width: 120px;
+}
+.plan-price {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.plan-feature {
+  cursor: pointer;
+}

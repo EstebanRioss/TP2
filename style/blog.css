@@ -1,0 +1,98 @@
+body{
+  padding-top: 70px
+}
+.filter-btn.active {
+  background-color: #548181;
+  color: #fff;
+}
+.article {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+.article.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+.sidebar, .comments .comment {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+.sidebar.reveal, .comments .comment.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+.sidebar {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.comment {
+  display: flex;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.comment.highlight {
+  background: #fff7e6;
+  border-radius: 8px;
+  padding: .5rem;
+}
+.avatar {
+  flex-shrink: 0;
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  background-color: #548181;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: .75rem;
+  position: relative;
+}
+.avatar::before {
+  content: attr(data-initial);
+  font-size: 1.2rem;
+}
+.read-more {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+.read-more:hover {
+  text-decoration: underline;
+}
+.article .card {
+  background: var(--card-bg);
+  border: none;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.article .card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+.sidebar, .comment, .article {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+.avatar {
+  width: 48px; height: 48px;
+  background: var(--primary);
+  color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 50%;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+.avatar::before {
+  content: attr(data-initial);
+}

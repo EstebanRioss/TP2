@@ -1,0 +1,166 @@
+  .hero {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero video {
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay with opacity */
+    opacity: 0;
+    animation: fadeInOverlay 1s forwards; /* Fade in the overlay */
+  }
+  
+  /* Title animation */
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1.2s 0.5s forwards; /* Fade and move up animation */
+  }
+  
+  .hero-title span {
+    display: block;
+    
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1.2s 0.8s forwards; /* Fade and move up animation */
+  }
+  
+  .hero-button {
+    color: #548181;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.2s 1s forwards; /* Fade and move up animation */
+  }
+  
+  /* Button hover effect */
+  .hero-button:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Animations */
+  @keyframes fadeInOverlay {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Botón personalizado */
+.btn-custom {
+  background-color: #548181;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  transition: background-color 0.3s, transform 0.3s ease;
+}
+
+/* Hover del botón */
+.btn-custom:hover {
+  background-color: #417a73;
+  transform: scale(1.1); /* Efecto de aumento de tamaño */
+}
+
+/* Card con sombra, bordes redondeados y transición */
+.card {
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s ease;
+}
+
+.card h3,p,a{
+  color: white;
+}
+
+/* Animación de hover para las cards */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Para la imagen */
+.card-img-top {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+/* Animación de la imagen al pasar el mouse */
+.card:hover .card-img-top {
+  transform: scale(1.1); /* Efecto de zoom en la imagen */
+}
+
+/* Títulos de las tarjetas */
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Descripción */
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+#testimonios {
+  background-color: #f8f9fa;
+}
+
+#testimonios .text-primary {
+  color: #548181 !important;
+}
+
+blockquote {
+  font-style: italic;
+  color: #444;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.counter-value {
+  color: #548181;
+}

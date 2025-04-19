@@ -1,0 +1,70 @@
+
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  .navbar-nav .nav-link {
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease;
+  }
+
+  .navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #548181; /* color cian moderno */
+    transition: width 0.3s ease;
+  }
+
+  .navbar-nav .nav-link:hover::after {
+    width: 100%;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #548181;
+  }
+
+  /* Dropdown con fade */
+  .fade-menu {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    visibility: hidden;
+    display: block !important; /* para que funcione con hover */
+  }
+
+  .dropdown:hover .fade-menu {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+  }
+
+  /* Botón animado */
+  .theme-toggle-button {
+    transition: all 0.3s ease;
+    border-radius: 20px;
+  }
+
+  .theme-toggle-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(13, 202, 240, 0.5);
+  }
+
+  /* Toggler sin borde feo */
+  .navbar-toggler {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+
+  /* Fondo moderno */
+  body {
+    background-color: #121212;
+    color: #f8f9fa;
+  }

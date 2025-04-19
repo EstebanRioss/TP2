@@ -1,0 +1,223 @@
+
+/* Botones de filtro */
+.filter-btn {
+  transition: all 0.3s ease;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.filter-btn.active {
+  background-color: #548181;
+  color: white;
+  border-color: #548181;
+  box-shadow: 0 0 10px rgba(84, 129, 129, 0.4);
+}
+
+.class-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.class-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+}
+
+.fade-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease;
+}
+
+.fade-in {
+  opacity: 1 !important;
+  transform: translateY(0px) !important;
+}
+
+.filter-btn.active {
+  background-color: #548181;
+  color: white;
+  border-color: #548181;
+}
+
+.gallery-page {
+  padding: 60px 0;
+  color: #fff;
+}
+
+.gallery-page h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.masonry-grid {
+  column-count: 3;
+  column-gap: 1rem;
+}
+
+@media (max-width: 992px) {
+  .masonry-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 576px) {
+  .masonry-grid {
+    column-count: 1;
+  }
+}
+
+.grid-item {
+  break-inside: avoid;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border-radius: 12px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease-in-out;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  filter: brightness(0.9);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.grid-item:hover img {
+  transform: scale(1.05);
+  filter: brightness(1);
+}
+
+.grid-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-title {
+  color: #ffc107;
+  font-size: 1.5rem;
+}
+
+.card-body ul {
+  padding-left: 1.2rem;
+}
+
+.card-body ul li {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Estilo para el fondo oscuro de la sección */
+.class-cards-grid {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.class-cards-grid .card {
+  background-color: #212121;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.class-cards-grid .card-body {
+  padding: 20px;
+}
+
+.class-button {
+  background-color: #ffc107;
+  color: black;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.class-button:hover {
+  background-color: #e0a800;
+  text-decoration: none;
+}
+
+.schedule-container {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 40px 0;
+  border-radius: 10px;
+}
+
+.schedule-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ffc107;
+  font-size: 2rem;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.schedule-table th,
+.schedule-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border: 1px solid #444;
+}
+
+.schedule-table th {
+  background-color: #333;
+  color: white;
+}
+
+.schedule-table td {
+  background-color: #212121;
+}
+
+.schedule-table td.free {
+  background-color: #333;
+  color: #ccc;
+}
+
+.schedule-table td span {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+
+.schedule-table td a {
+  color: #d4a413;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.schedule-table td a:hover {
+  text-decoration: underline;
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

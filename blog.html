@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krown Gym</title>
+    <link rel="stylesheet" href="style/blog.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <!-- CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+<body class="bg-dark">
+
+    <header></header>
+
+    <main class="blog-container py-5">
+      <div class="container">
+        <div class="row g-4">
+    
+          <!-- Columna principal: artículos -->
+          <div class="col-lg-8">
+            <h1 class="mb-4">Blog Fitness</h1>
+    
+            <!-- Filtros -->
+            <div class="btn-group mb-4" role="group">
+              <button type="button" class="btn btn-outline-secondary filter-btn active" data-filter="all">Todos</button>
+              <button type="button" class="btn btn-outline-secondary filter-btn" data-filter="workouts">Rutinas</button>
+              <button type="button" class="btn btn-outline-secondary filter-btn" data-filter="nutrition">Nutrición</button>
+              <button type="button" class="btn btn-outline-secondary filter-btn" data-filter="tips">Consejos</button>
+            </div>
+    
+            <!-- Grid de artículos -->
+            <div class="row g-4">
+              <div class="col-sm-6 col-lg-4 article" data-tags="workouts">
+                <article class="p-3 bg-dark rounded shadow-sm h-100 text-white">
+                  <h3>HIIT: Quema grasa en 20 minutos</h3>
+                  <p>Ideal si tenés poco tiempo: entrenamientos intensos que aceleran tu metabolismo.</p>
+                  <a href="https://www.menshealth.com/es/fitness/a39974852/entrenamiento-hiit-20-minutos-quemar-grasa-verano/" class="read-more">Leer más</a>
+                </article>
+              </div>
+    
+              <div class="col-sm-6 col-lg-4 article" data-tags="workouts">
+                <article class="p-3 bg-dark rounded shadow-sm h-100 text-white">
+                  <h3>Entrená desde casa: rutina sin equipamiento</h3>
+                  <p>No necesitás nada más que tu cuerpo para ponerte en forma. Esta rutina te guía paso a paso.</p>
+                  <a href="https://www.menshealth.com/es/fitness/a35159572/entrenamiento-casa-circuito-5-ejercicios-peso-corporal/" class="read-more">Leer más</a>
+                </article>
+              </div>
+    
+              <div class="col-sm-6 col-lg-4 article" data-tags="nutrition">
+                <article class="p-3 bg-dark rounded shadow-sm h-100 text-white">
+                  <h3>Plan de alimentación post-entreno</h3>
+                  <p>Qué comer después del ejercicio para optimizar la recuperación muscular.</p>
+                  <a href="https://triatlon.org/blog/alimentos-post-entreno-que-comer/" class="read-more">Leer más</a>
+                </article>
+              </div>
+    
+              <div class="col-sm-6 col-lg-4 article" data-tags="nutrition">
+                <article class="p-3 bg-dark rounded shadow-sm h-100 text-white">
+                  <h3>3 ideas de desayunos energéticos</h3>
+                  <p>Opciones saludables, rápidas y ricas para empezar tu día con todo.</p>
+                  <a href="https://calmessimple.com.ar/que-desayunar-para-tener-mas-energia/" class="read-more">Leer más</a>
+                </article>
+              </div>
+    
+              <div class="col-sm-6 col-lg-4 article" data-tags="nutrition">
+                <article class="p-3 bg-dark rounded shadow-sm h-100 text-white">
+                  <h3>Snacks saludables para media mañana</h3>
+                  <p>Evitá los ultraprocesados con estas opciones caseras y nutritivas.</p>
+                  <a href="https://www.centrojuliafarre.es/blog/snacks-saludables/" class="read-more">Leer más</a>
+                </article>
+              </div>
+    
+              <div class="col-sm-6 col-lg-4 article" data-tags="nutrition">
+                <article class="p-3 bg-dark rounded shadow-sm h-100 text-white">
+                  <h3>Top 10 alimentos para una dieta saludable y energética</h3>
+                  <p>Incluí estos alimentos en tu día a día para mejorar tu rendimiento y bienestar.</p>
+                  <a href="https://quaker.lat/mx/articulos/10-ejemplos-de-alimentos-saludables-que-debes-incluir-en-tu-alimentacion" class="read-more">Leer más</a>
+                </article>
+              </div>
+    
+              <div class="col-sm-6 col-lg-4 article" data-tags="workouts,nutrition">
+                <article class="p-3 bg-dark rounded shadow-sm h-100 text-white">
+                  <h3>Guía completa: Entrenamiento y alimentación para ganar masa muscular</h3>
+                  <p>Combiná la rutina ideal con una dieta efectiva y notá los resultados.</p>
+                  <a href="#guia-musculacion" class="read-more">Leer más</a>
+                </article>
+              </div>
+    
+              <div class="col-sm-6 col-lg-4 article" data-tags="tips">
+                <article class="p-3 bg-dark rounded shadow-sm h-100 text-white">
+                  <h3>Pequeños hábitos que mejoran tu salud</h3>
+                  <p>Desde estiramientos hasta pausas activas: sumá bienestar sin darte cuenta.</p>
+                  <a href="https://www.niddk.nih.gov/health-information/informacion-de-la-salud/alimentacion-nutricion/como-cambiar-sus-habitos-para-tener-una-mejor-salud" class="read-more">Leer más</a>
+                </article>
+              </div>
+    
+              <div class="col-sm-6 col-lg-4 article" data-tags="tips">
+                <article class="p-3 bg-dark rounded shadow-sm h-100 text-white">
+                  <h3>¿Tomás suficiente agua? Tips para mantenerte hidratado</h3>
+                  <p>La hidratación es clave. Te mostramos cómo crear el hábito sin esfuerzo.</p>
+                  <a href="https://www.osde.com.ar/salud-y-bienestar/5-consejos-para-aumentar-consumo-de-agua-1588.html" class="read-more">Leer más</a>
+                </article>
+              </div>
+    
+              <div class="col-sm-6 col-lg-4 article" data-tags="tips">
+                <article class="p-3 bg-dark rounded shadow-sm h-100 text-white">
+                  <h3>Mejorá tu postura con estos ejercicios simples</h3>
+                  <p>Ejercicios diarios para evitar dolores y sentirte con más energía.</p>
+                  <a href="https://www.lanacion.com.ar/lifestyle/cuidado-cuerpo-belleza/los-10-ejercicios-que-te-ayudaran-a-mejorar-la-postura-corporal-nid27042024/" class="read-more">Leer más</a>
+                </article>
+              </div>
+    
+              <div class="col-sm-6 col-lg-4 article" data-tags="tips">
+                <article class="p-3 bg-dark rounded shadow-sm h-100 text-white">
+                  <h3>Errores comunes al empezar en el gimnasio</h3>
+                  <p>Te contamos qué evitar para no frustrarte y lograr tus objetivos.</p>
+                  <a href="https://www.hsnstore.com/blog/deportes/fitness/entrenamiento-de-pesas-para-principiantes/errores/" class="read-more">Leer más</a>
+                </article>
+              </div>
+    
+              <div class="col-sm-6 col-lg-4 article" data-tags="workouts,tips">
+                <article class="p-3 bg-dark rounded shadow-sm h-100 text-white">
+                  <h3>Cómo mantener la motivación para entrenar cada semana</h3>
+                  <p>Consejos prácticos para que el ejercicio se convierta en parte de tu rutina.</p>
+                  <a href="https://www.universal-assistance.com/uablog/tips-para-recuperar-la-motivacion-para-hacer-ejercicio/" class="read-more">Leer más</a>
+                </article>
+              </div>
+    
+              <div class="col-sm-6 col-lg-4 article" data-tags="nutrition,tips">
+                <article class="p-3 bg-dark rounded shadow-sm h-100 text-white">
+                  <h3>Planificá tus comidas como un profesional del fitness</h3>
+                  <p>Organizate con estos trucos y comé sano sin complicarte la vida.</p>
+                  <a href="https://www.escuelaculturismonatural.com/planificacion-de-la-dieta-de-un-deportista/" class="read-more">Leer más</a>
+                </article>
+              </div>
+    
+            </div>
+          </div>
+    
+          <!-- Columna secundaria: sidebar + comentarios -->
+          <div class="col-lg-4">
+    
+            <aside class="sidebar mb-5 p-3 bg-dark rounded shadow-sm text-white">
+              <h3>Sobre Nosotros</h3>
+              <p>Somos un equipo de <strong>entrenadores personales</strong>, <strong>nutricionistas</strong> y <strong>especialistas en bienestar</strong> dedicados a ayudarte a alcanzar tus metas.</p>
+            </aside>
+    
+            <section class="comments">
+              <h3>Comentarios</h3>
+    
+              <div class="comment p-3 bg-dark rounded shadow-sm mb-3 text-white">
+                <div class="avatar me-3" data-initial="L"></div>
+                <div>
+                  <strong>Lucas</strong>
+                  <p>¡Excelente artículo! Justo lo que necesitaba para mejorar mis rutinas.</p>
+                </div>
+              </div>
+    
+              <div class="comment p-3 bg-dark rounded shadow-sm mb-3 text-white">
+                <div class="avatar me-3" data-initial="M"></div>
+                <div>
+                  <strong>Martina</strong>
+                  <p>Me encantó el consejo del post-entreno. ¿Recomiendan alguna receta?</p>
+                </div>
+              </div>
+    
+              <div class="comment p-3 bg-dark rounded shadow-sm mb-3 text-white">
+                <div class="avatar me-3" data-initial="M"></div>
+                <div>
+                  <strong>María</strong>
+                  <p>Muy buen contenido, me encantó la parte sobre nutrición balanceada.</p>
+                </div>
+              </div>
+    
+              <div class="comment p-3 bg-dark rounded shadow-sm mb-3 text-white">
+                <div class="avatar me-3" data-initial="J"></div>
+                <div>
+                  <strong>Julián</strong>
+                  <p>Estaría genial un artículo con ejercicios para hacer en casa. ¡Gracias!</p>
+                </div>
+              </div>
+    
+              <div class="comment p-3 bg-dark rounded shadow-sm mb-3 text-white">
+                <div class="avatar me-3" data-initial="S"></div>
+                <div>
+                  <strong>Sofía</strong>
+                  <p>Los consejos sobre descanso fueron súper útiles. ¡Gracias por compartir!</p>
+                </div>
+              </div>
+    
+              <div class="comment p-3 bg-dark rounded shadow-sm mb-3 text-white">
+                <div class="avatar me-3" data-initial="E"></div>
+                <div>
+                  <strong>Emiliano</strong>
+                  <p>¡Me encantó el diseño del sitio! Y los artículos están muy bien explicados.</p>
+                </div>
+              </div>
+    
+              <div class="comment p-3 bg-dark rounded shadow-sm mb-3 text-white">
+                <div class="avatar me-3" data-initial="V"></div>
+                <div>
+                  <strong>Valentina</strong>
+                  <p>Muy motivador, me dieron ganas de empezar a entrenar ya. ❤️</p>
+                </div>
+              </div>
+    
+            </section>
+          </div>
+    
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>
